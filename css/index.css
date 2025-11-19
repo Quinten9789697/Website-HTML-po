@@ -1,0 +1,42 @@
+h1{color: Green;}
+       a  {
+            text-decoration: none;
+            color:black;
+         
+          }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: rgb(8, 112, 8); 
+  height: 60px;
+}
+
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  border: 2.5px solid black;
+  background-color: rgb(8, 112, 8);
+  transition: background-color 0.3s;
+}
+
+.white{
+  color: white;
+  align-items: center;
+}
+
+
+
+
+
+
