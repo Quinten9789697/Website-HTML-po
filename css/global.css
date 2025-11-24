@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image:url("../images/mtb-utrechtseheuvelrug-pieter-van-leeuwen-hoge-vuursche.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+a  {
+            text-decoration: none;
+            color:black;
+            }
+
+.content {
+  margin: 0 10vw 10vw;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: calc(100vh - 60px - 10vw);
+}
+
+.navbalk {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: rgb(8, 112, 8); 
+  height: 60px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px; 
+  background-color: rgb(8, 112, 8);
+  transition: background-color 0.3s;
+}
