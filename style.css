@@ -1,3 +1,20 @@
+h1 {
+  color: green;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -66,18 +83,11 @@ img {
     flex: 1 1 140px;
     min-width: 120px;
   }
-
-  .content {
-    min-height: calc(100vh - 96px - 10vw);
-    margin: 0 5vw 10vw;
-    padding: 16px;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .navbalk {
-    justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: stretch;
     padding: 8px 0;

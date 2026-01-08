@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("jan 6, 2026 11:36:00").getTime();
+var countDownDate = new Date("jan 1, 2026 11:36:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -20,12 +20,15 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
-  // If the count down is over, write some text 
+  // If the count down is over, show time elapsed
   if (distance < 0) {
-    var c = 0;
-  function myCounter() {
-  document.getElementById("demo").innerHTML = ++c;
-}
+    var elapsedTime = Math.abs(distance);
+    var elapsedDays = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+    var elapsedHours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var elapsedMinutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+    var elapsedSeconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = "Het event was: " + elapsedDays + "d " + elapsedHours + "h " + elapsedMinutes + "m " + elapsedSeconds + "s " + "geleden.";
   }
 }, 1000);
 
