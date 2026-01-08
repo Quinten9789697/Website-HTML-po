@@ -17,8 +17,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = "Het event start over: " + days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
     
   if (distance < 0) {
     var elapsedTime = Math.abs(distance);
