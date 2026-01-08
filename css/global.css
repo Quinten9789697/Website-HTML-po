@@ -38,3 +38,65 @@ a  {
   background-color: rgb(8, 112, 8);
   transition: background-color 0.3s;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 615px) {
+  .navbalk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    height: auto;
+  }
+
+  .navbalk .nav-item {
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: transparent;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1 1 140px;
+    min-width: 120px;
+  }
+
+  .content {
+    min-height: calc(100vh - 96px - 10vw);
+    margin: 0 5vw 10vw;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbalk {
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 8px 0;
+    height: auto;
+    gap: 8px;
+  }
+
+  .navbalk .nav-item {
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .content {
+    min-height: calc(100vh - 96px - 10vw);
+    margin: 0 5vw 10vw;
+    padding: 16px;
+  }
+}
